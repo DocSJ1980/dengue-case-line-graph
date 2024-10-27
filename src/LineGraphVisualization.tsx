@@ -69,7 +69,7 @@ export default function LineGraphVisualization() {
     const [data, setData] = useState<ProcessedData | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [topN, setTopN] = useState<number>(10);
-    const [playbackSpeed, setPlaybackSpeed] = useState<number>(70);
+    const [playbackSpeed] = useState<number>(70);
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [selectedUCs, setSelectedUCs] = useState<string[]>([]);
