@@ -111,10 +111,14 @@ export default function LineGraphVisualization() {
             })
             .then((jsonData: DataItem[]) => {
                 const uniqueUCs = [...new Set(jsonData.map(item => item.name))];
-                const startDate = '2024-01-01';
+                const startDate = '2024-07-01';
                 const endDate = new Date().toISOString().split('T')[0];
                 const dateRange = generateDateRange(startDate, endDate);
 
+                // ... rest of the code ...
+
+
+                // ... rest of the code ...
                 const dataLookup = new Map<string, number>();
                 jsonData.forEach(item => {
                     const formattedDate = formatDate(item.confirmation_date);
